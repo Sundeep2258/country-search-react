@@ -32,7 +32,7 @@ const countryAndCapitalsList = [
 
 class Capitals extends Component {
   state = {
-    activeCapitalId: countryAndCapitalsList[0].id,
+    activeCapitalId: countryAndCapitalsList[4].id,
   }
 
   onChangeCapital = event => {
@@ -67,7 +67,7 @@ class Capitals extends Component {
                 <option
                   key={eachCapital.id}
                   value={eachCapital.id}
-                  className="select"
+                  className="option"
                 >
                   {eachCapital.capitalDisplayText}
                 </option>
